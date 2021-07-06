@@ -344,8 +344,6 @@ class DoorVivintCard extends HTMLElement {
             endCallBtn.parentNode.replaceChild(clonedEndCallBtn, endCallBtn);
     
             makeCallBtn.style.display = 'inline-flex';
-            openDoorBtn1.style.display = 'none';
-            openDoorBtn2.style.display = 'none';
     
         }
     
