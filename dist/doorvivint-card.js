@@ -155,6 +155,8 @@ class DoorVivintCard extends HTMLElement {
                     let rejectCallBtn = droidCard.getElementById('btn-reject-call');
                     let endCallBtn = droidCard.getElementById('btn-end-call');
                     let makeCallBtn = droidCard.getElementById('btn-make-call');
+                    let openDoorBtn1 = droidCard.getElementById('btn-open-door-1');
+                    let openDoorBtn2 = droidCard.getElementById('btn-open-door-2');
     
                     makeCallBtn.style.display = 'none';
                     acceptCallBtn.style.display = 'inline-flex';
@@ -166,6 +168,8 @@ class DoorVivintCard extends HTMLElement {
                         acceptCallBtn.style.display = 'none';
                         rejectCallBtn.style.display = 'none';
                         endCallBtn.style.display = 'inline-flex';
+                        openDoorBtn1.style.display = 'inline-flex';
+                        openDoorBtn2.style.display = 'inline-flex';
                     });
                     session.on("confirmed", () => console.log('Incoming - call confirmed'));
                     session.on("ended", () => {console.log('Incoming - call ended'); droidCard.cleanup(hass)});
@@ -204,9 +208,13 @@ class DoorVivintCard extends HTMLElement {
     
                     let endCallBtn = droidCard.getElementById('btn-end-call');
                     let makeCallBtn = droidCard.getElementById('btn-make-call');
+                    let openDoorBtn1 = droidCard.getElementById('btn-open-door-1');
+                    let openDoorBtn2 = droidCard.getElementById('btn-open-door-2');
     
                     makeCallBtn.style.display = 'none';
                     endCallBtn.style.display = 'inline-flex';
+                    openDoorBtn1.style.display = 'inline-flex';
+                    openDoorBtn2.style.display = 'inline-flex';
                     endCallBtn.addEventListener('click', () => session.terminate());
     
                     //Register for various call session events:
