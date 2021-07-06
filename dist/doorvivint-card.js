@@ -57,12 +57,12 @@ class DoorVivintCard extends HTMLElement {
                 <audio id='audio-player'></audio>
             </div>
             <div class='button'>
-                <mwc-button style='display:none' raised id='btn-open-door-1'>` + 'Abrir Portão Social' + `</mwc-button>
-                <mwc-button style='display:none' raised id='btn-open-door-2'>` + 'Abrir Garagem' + `</mwc-button>
                 <mwc-button raised id='btn-make-call'>` + 'Chamar interfone' + `</mwc-button>
                 <mwc-button style='display:none' raised id='btn-accept-call'>` + 'Aceitar' + `</mwc-button>
                 <mwc-button style='display:none' raised id='btn-reject-call'>` + 'Rejeitar' + `</mwc-button>
                 <mwc-button style='display:none' raised id='btn-end-call'>` + 'Finalizar' + `</mwc-button>
+                <mwc-button style='display:none' raised id='btn-open-door-1'>` + 'Abrir Portão Social' + `</mwc-button>
+                <mwc-button style='display:none' raised id='btn-open-door-2'>` + 'Abrir Garagem' + `</mwc-button>
             </div>
             `;
             card.appendChild(content);
