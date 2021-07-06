@@ -325,10 +325,14 @@ class DoorVivintCard extends HTMLElement {
             let rejectCallBtn = this.getElementById('btn-reject-call');
             let endCallBtn = this.getElementById('btn-end-call');
             let makeCallBtn = this.getElementById('btn-make-call');
+            let openDoorBtn1 = droidCard.getElementById('btn-open-door-1');
+            let openDoorBtn2 = droidCard.getElementById('btn-open-door-2');
     
             //acceptCallBtn remove eventlisteners and hide
             let clonedAcceptCallBtn = acceptCallBtn.cloneNode(true)
             clonedAcceptCallBtn.style.display = 'none';
+            openDoorBtn1.style.display = 'none';
+            openDoorBtn2.style.display = 'none';
             acceptCallBtn.parentNode.replaceChild(clonedAcceptCallBtn, acceptCallBtn);
     
             //rejectCallBtn remove eventlisteners and hide
