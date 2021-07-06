@@ -339,8 +339,6 @@ class DoorVivintCard extends HTMLElement {
             //endCallBtn remove eventlisteners and hide
             let clonedEndCallBtn = endCallBtn.cloneNode(true)
             clonedEndCallBtn.style.display = 'none';
-            openDoorBtn1.style.display = 'none';
-            openDoorBtn2.style.display = 'none';
             endCallBtn.parentNode.replaceChild(clonedEndCallBtn, endCallBtn);
     
             makeCallBtn.style.display = 'inline-flex';
