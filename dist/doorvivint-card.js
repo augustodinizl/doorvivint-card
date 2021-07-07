@@ -149,7 +149,7 @@ class DoorVivintCard extends HTMLElement {
                     console.log('Session - Incoming call from ' + session.remote_identity );
     
                     //If you want to perform an action on incoming call, can use the following:
-    //              hass.callService('input_boolean', 'turn_on', { entity_id: 'input_boolean.gds_ringing' });
+    //              hass.callService('input_boolean', 'turn_on', { entity_id: 'input_boolean.doorphone_ringing' });
     
                     let acceptCallBtn = droidCard.getElementById('btn-accept-call');
                     let rejectCallBtn = droidCard.getElementById('btn-reject-call');
@@ -185,14 +185,14 @@ class DoorVivintCard extends HTMLElement {
                         session.answer(callOptions);
     
                         //If you want to perform an action on accepting an incoming call, can use the following:
-    //                  hass.callService('input_boolean', 'turn_off', { entity_id: 'input_boolean.gds_ringing' });
+    //                  hass.callService('input_boolean', 'turn_off', { entity_id: 'input_boolean.doorphone_ringing' });
     
                     });
                     endCallBtn.addEventListener('click', () => session.terminate());
                     rejectCallBtn.addEventListener('click', () => {
     
                         //If you want to perform an action on rejecting an incoming call, can use the following:
-    //                  hass.callService('input_boolean', 'turn_off', { entity_id: 'input_boolean.gds_ringing' });
+    //                  hass.callService('input_boolean', 'turn_off', { entity_id: 'input_boolean.doorphone_ringing' });
     
                         session.answer(callOptions);
                         setTimeout(() => {
@@ -323,6 +323,8 @@ class DoorVivintCard extends HTMLElement {
             let rejectCallBtn = this.getElementById('btn-reject-call');
             let endCallBtn = this.getElementById('btn-end-call');
             let makeCallBtn = this.getElementById('btn-make-call');
+            let openDoorBtn1 = this.getElementById('btn-open-door-1');
+            let openDoorBtn2 = this.getElementById('btn-open-door-2');
     
             //acceptCallBtn remove eventlisteners and hide
             let clonedAcceptCallBtn = acceptCallBtn.cloneNode(true)
@@ -338,6 +340,16 @@ class DoorVivintCard extends HTMLElement {
             let clonedEndCallBtn = endCallBtn.cloneNode(true)
             clonedEndCallBtn.style.display = 'none';
             endCallBtn.parentNode.replaceChild(clonedEndCallBtn, endCallBtn);
+
+            //openDoorBtn1 remove eventlisteners and hide
+            let clonedOpenDoorBtn1 = openDoorBtn1.cloneNode(true)
+            clonedOpenDoorBtn1.style.display = 'none';
+            openDoorBtn1.parentNode.replaceChild(clonedOpenDoorBtn1, openDoorBtn1); 
+
+            //openDoorBtn2 remove eventlisteners and hide
+            let clonedOpenDoorBtn2 = openDoorBtn2.cloneNode(true)
+            clonedOpenDoorBtn2.style.display = 'none';
+            openDoorBtn2.parentNode.replaceChild(clonedOpenDoorBtn2, openDoorBtn2);
     
             makeCallBtn.style.display = 'inline-flex';
     
