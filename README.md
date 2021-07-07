@@ -1,4 +1,4 @@
-# Vivint/Vivotek Video Doorbell Card for Lovelace
+# Generic SIP Video Doorbell Card for Lovelace
 
 Addapted version of vivint/vivotek video doorbell card for lovelace addapted from the awesome work made by https://github.com/tommyjlong 
 here https://github.com/tommyjlong/doorvivint-card, and addapted to meet my needs.
