@@ -149,7 +149,7 @@ class DoorVivintCard extends HTMLElement {
                     console.log('Session - Incoming call from ' + session.remote_identity );
     
                     //If you want to perform an action on incoming call, can use the following:
-    //              hass.callService('input_boolean', 'turn_on', { entity_id: 'input_boolean.doorphone_ringing' });
+                    hass.callService('input_boolean', 'turn_on', { entity_id: 'input_boolean.doorphone_ringing' });
     
                     let acceptCallBtn = droidCard.getElementById('btn-accept-call');
                     let rejectCallBtn = droidCard.getElementById('btn-reject-call');
@@ -185,14 +185,14 @@ class DoorVivintCard extends HTMLElement {
                         session.answer(callOptions);
     
                         //If you want to perform an action on accepting an incoming call, can use the following:
-    //                  hass.callService('input_boolean', 'turn_off', { entity_id: 'input_boolean.doorphone_ringing' });
+                        hass.callService('input_boolean', 'turn_off', { entity_id: 'input_boolean.doorphone_ringing' });
     
                     });
                     endCallBtn.addEventListener('click', () => session.terminate());
                     rejectCallBtn.addEventListener('click', () => {
     
                         //If you want to perform an action on rejecting an incoming call, can use the following:
-    //                  hass.callService('input_boolean', 'turn_off', { entity_id: 'input_boolean.doorphone_ringing' });
+                        hass.callService('input_boolean', 'turn_off', { entity_id: 'input_boolean.doorphone_ringing' });
     
                         session.answer(callOptions);
                         setTimeout(() => {
