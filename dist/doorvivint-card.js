@@ -139,7 +139,7 @@ class DoorVivintCard extends HTMLElement {
             //Register callbacks to tell us SIP Registration events
             this.sipPhone.on("registered", () => console.log('SIPPhone Registered with SIP Server'));
             this.sipPhone.on("unregistered", () => console.log('SIPPhone Unregistered with SIP Server'));
-            this.sipPhone.on("registrationFailed", () => console.log('SIPPhone Failed Registeration with SIP Server'));
+            this.sipPhone.on("registrationFailed", () => console.log('SIPPhone Failed Registration with SIP Server'));
     
             //Register a callback when a new WebRTC media session is established
             //  which occurs on incoming or outgoing calls.
