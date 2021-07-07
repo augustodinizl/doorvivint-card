@@ -172,7 +172,14 @@ class DoorVivintCard extends HTMLElement {
                         openDoorBtn2.style.display = 'inline-flex';
                     });
                     session.on("confirmed", () => console.log('Incoming - call confirmed'));
-                    session.on("ended", () => {console.log('Incoming - call ended'); droidCard.cleanup(hass)});
+                    session.on("ended", () => {
+                        console.log('Incoming - call ended'); 
+                        acceptCallBtn.style.display = 'none';
+                        rejectCallBtn.style.display = 'none';
+                        endCallBtn.style.display = 'none';
+                        openDoorBtn1.style.display = 'none';
+                        openDoorBtn2.style.display = 'none';
+                    });
                     session.on("failed", () =>{console.log('Incoming - call failed'); droidCard.cleanup(hass)});
                     session.on("peerconnection", () => {
                         session.connection.addEventListener("addstream", (e) => {
