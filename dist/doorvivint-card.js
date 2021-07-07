@@ -202,7 +202,7 @@ class DoorVivintCard extends HTMLElement {
     
                     acceptCallBtn.style.display = 'inline-flex';
                     rejectCallBtn.style.display = 'inline-flex';
-                    openDoorBtn1.addEventListener('click', () => call.sendDTMF(*2););
+                    openDoorBtn2.addEventListener('click', () => call.sendDTMF(*2););
                 }
                 if (session.direction === "outgoing") {
                     console.log('Session - Outgoing Call Event')
