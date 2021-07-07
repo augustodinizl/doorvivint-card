@@ -83,11 +83,11 @@ class DoorVivintCard extends HTMLElement {
         initJsSIPIfNecessary(hass) {
             let droidCard = this;
             console.info("%c  DoorVivint-Card  \n%c  Version 0.1.0    ","color: orange; font-weight: bold; background: black","color: white; font-weight: bold; background: dimgray");
-    //        If you want to add another button to perform some other action, can use the following:
-            let openDoorBtn = droidCard.getElementById('btn-open-door-1');
-            openDoorBtn.addEventListener('click', function(opendoor) {
-            hass.callService('input_boolean', 'turn_on', { entity_id: 'input_boolean.door' });
-        });
+            //If you want to add another button to perform some other action, can use the following:
+//            let openDoorBtn = droidCard.getElementById('btn-open-door-1');
+//            openDoorBtn.addEventListener('click', function(opendoor) {
+//            hass.callService('input_boolean', 'turn_on', { entity_id: 'input_boolean.door' });
+//            });
     
             // Audio
             //   Local audio stream (input from mic, output to speaker) is handled
