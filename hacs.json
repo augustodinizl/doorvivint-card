@@ -1,5 +1,5 @@
 {
-  "name": "Vivint Doorbell Card - SIP Capable",
+  "name": "Generic SIP Door Phone Card",
   "render_readme": false,
-  "country": "US",
+  "country": "US"
 }

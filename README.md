@@ -3,6 +3,8 @@
 Addapted version of vivint/vivotek video doorbell card for lovelace addapted from the awesome work made by https://github.com/tommyjlong 
 here https://github.com/tommyjlong/doorvivint-card, and addapted to meet my needs.
 
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
+
 Install instructions:
 TODO
 

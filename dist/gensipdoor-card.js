@@ -1,4 +1,4 @@
-class DoorVivintCard extends HTMLElement {
+class GenSIPDoorCard extends HTMLElement {
     // Version number is contained in the console.info() below.
     
         constructor() {
@@ -82,7 +82,7 @@ class DoorVivintCard extends HTMLElement {
     
         initJsSIPIfNecessary(hass) {
             let droidCard = this;
-            console.info("%c  DoorVivint-Card  \n%c  Version 0.1.0    ","color: orange; font-weight: bold; background: black","color: white; font-weight: bold; background: dimgray");
+            console.info("%c  GenSipDoor-Card  \n%c  Version 0.1.0    ","color: orange; font-weight: bold; background: black","color: white; font-weight: bold; background: dimgray");
             //If you want to add another button to perform some other action, can use the following:
 //            let openDoorBtn = droidCard.getElementById('btn-open-door-1');
 //            openDoorBtn.addEventListener('click', function(opendoor) {
@@ -363,6 +363,6 @@ class DoorVivintCard extends HTMLElement {
         }
     }
     
-    customElements.define('doorvivint-card', DoorVivintCard);
+    customElements.define('gensipdoor-card', GenSipDoorCard);
     
     
