@@ -362,7 +362,7 @@ class GenSIPDoorCard extends HTMLElement {
             return this.shadowRoot.querySelector(`#${id}`);
         }
     }
-    
-    customElements.define('gensipdoor-card', GenSipDoorCard);
+        
+customElements.define('gensipdoor-card', GenSipDoorCard);
     
     
