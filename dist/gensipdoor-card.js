@@ -363,6 +363,6 @@ class GenSIPDoorCard extends HTMLElement {
         }
     }
         
-customElements.define('gensipdoor-card', GenSipDoorCard);
+customElements.define('gensipdoor-card', GenSIPDoorCard);
     
     
