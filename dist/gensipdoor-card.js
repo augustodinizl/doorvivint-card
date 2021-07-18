@@ -223,8 +223,8 @@ class GenSIPDoorCard extends HTMLElement {
     
                     makeCallBtn.style.display = 'none';
                     endCallBtn.style.display = 'inline-flex';
-                    openDoorBtn1.style.display = 'none';
-                    openDoorBtn2.style.display = 'none';
+                    openDoorBtn1.style.display = 'inline-flex';
+                    openDoorBtn2.style.display = 'inline-flex';
                     endCallBtn.addEventListener('click', () => session.terminate());
     
                     //Register for various call session events:
