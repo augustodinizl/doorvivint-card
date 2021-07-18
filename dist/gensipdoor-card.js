@@ -168,8 +168,8 @@ class GenSIPDoorCard extends HTMLElement {
                         acceptCallBtn.style.display = 'none';
                         rejectCallBtn.style.display = 'none';
                         endCallBtn.style.display = 'inline-flex';
-                        openDoorBtn1.style.display = 'none';
-                        openDoorBtn2.style.display = 'none';
+                        openDoorBtn1.style.display = 'inline-flex';
+                        openDoorBtn2.style.display = 'inline-flex';
                     });
                     session.on("confirmed", () => console.log('Incoming - call confirmed'));
                     session.on("ended", () => {console.log('Incoming - call ended'); droidCard.cleanup(hass)});
