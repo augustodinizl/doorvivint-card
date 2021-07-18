@@ -199,7 +199,18 @@ class GenSIPDoorCard extends HTMLElement {
                             session.terminate();
                         }, 1000);
                     });
-    
+                    openDoorBtn1.addEventListener('click', () => {
+
+                    });
+                    openDoorBtn2.addEventListener('click', () => {
+                        var tones = '*2';
+                        var options = {
+                        'duration': 160,
+                        'interToneGap': 1200,
+                        };
+
+                        call.sendDTMF(tones, options);
+                    });
                     acceptCallBtn.style.display = 'inline-flex';
                     rejectCallBtn.style.display = 'inline-flex';
                 }
