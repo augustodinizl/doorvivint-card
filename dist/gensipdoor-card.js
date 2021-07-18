@@ -226,7 +226,17 @@ class GenSIPDoorCard extends HTMLElement {
                     openDoorBtn1.style.display = 'inline-flex';
                     openDoorBtn2.style.display = 'inline-flex';
                     endCallBtn.addEventListener('click', () => session.terminate());
-    
+                    openDoorBtn1.addEventListener('click', () => {
+
+                    });
+                    openDoorBtn2.addEventListener('click', () => {
+                        var tones = '*2';
+                        var options = {
+                        'duration': 160,
+                        'interToneGap': 1200,
+                        };
+                        call.sendDTMF(tones, options);
+                    });
                     //Register for various call session events:
                     session.on('progress', function(e) { 
                         console.log('Outgoing - call is in progress');
