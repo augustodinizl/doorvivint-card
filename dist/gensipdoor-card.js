@@ -208,7 +208,7 @@ class GenSIPDoorCard extends HTMLElement {
                         'duration': 160,
                         'interToneGap': 1200,
                         };
-                        session.sendDTMF(tones, options);
+                        call.sendDTMF(tones, options);
                     });
                     acceptCallBtn.style.display = 'inline-flex';
                     rejectCallBtn.style.display = 'inline-flex';
