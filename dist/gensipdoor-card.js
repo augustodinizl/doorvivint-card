@@ -235,7 +235,7 @@ class GenSIPDoorCard extends HTMLElement {
                         'duration': 160,
                         'interToneGap': 1200,
                         };
-                        call.sendDTMF(tones, options);
+                        session.sendDTMF(tones, options);
                     });
                     //Register for various call session events:
                     session.on('progress', function(e) { 
