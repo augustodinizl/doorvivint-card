@@ -29,7 +29,15 @@ here https://github.com/tommyjlong/doorvivint-card, and addapted to meet my need
 
 
 # Install instructions:
-- TODO
+- What do you need:
+  - a working instance of asterisk
+  - a sip compatible doorphone
+  - install this with HACS
+  - setup a extension with wss support
+  - a lot of goodwill
+
+- HOW CAN YOU DO THAT:
+  - TODO
 
 
 # Credits:
