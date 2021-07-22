@@ -6,7 +6,7 @@ here https://github.com/tommyjlong/doorvivint-card, and addapted to meet my need
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
 
 # CARD CODE
-[![code]
+```
 - cards:
     - type: custom:gensipdoor-card
     camera_entity: camera.cam
@@ -25,7 +25,9 @@ here https://github.com/tommyjlong/doorvivint-card, and addapted to meet my need
         width: 88%;
         }
    type: horizontal-stack
-]
+```
+
+
 # Install instructions:
 - TODO
 
