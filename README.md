@@ -5,6 +5,27 @@ here https://github.com/tommyjlong/doorvivint-card, and addapted to meet my need
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
 
+# CARD CODE
+"
+- cards:
+    - type: custom:gensipdoor-card
+    camera_entity: camera.cam
+    sip_settings:
+        sip_password: !secret sip_doorphone
+        sip_server: ASTERISK_IP
+        sip_username: "THIS_EXTENSION_NUMBER"
+        sip_wss_url: "wss://YOUR.duckdns.org:8089/ws"
+        sip_doorbell_username: "DOORPHONE_EXTENSION_NUMBER"
+    title: null
+    style: |
+        ha-card {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 88%;
+        }
+   type: horizontal-stack
+"
 # Install instructions:
 - TODO
 
